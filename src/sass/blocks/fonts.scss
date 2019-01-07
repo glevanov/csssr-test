@@ -49,3 +49,16 @@
   url('fonts/pt-sans-v9-latin_cyrillic-700italic.ttf') format('truetype'),
   url('fonts/pt-sans-v9-latin_cyrillic-700italic.svg#PTSans') format('svg');
 }
+
+@font-face {
+  font-family: 'Courier New';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/cour.eot');
+  src: local('Courier New'), local('Courier'),
+  url('fonts/cour.eot?#iefix') format('embedded-opentype'),
+  url('fonts/cour.woff2') format('woff2'),
+  url('fonts/cour.woff') format('woff'),
+  url('fonts/cour.ttf') format('truetype'),
+  url('fonts/cour.svg#Courier') format('svg');
+}

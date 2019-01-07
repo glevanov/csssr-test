@@ -1,0 +1,14 @@
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__stamp {
+  transform: translateX(65px);
+}
+
+.header__file {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}

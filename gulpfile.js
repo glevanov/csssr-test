@@ -44,7 +44,7 @@ gulp.task('server', function () {
 
   gulp.watch('src/sass/**/*.scss', gulp.series('css', 'reload'))
   gulp.watch('src/**/*.pug', gulp.series('html', 'reload'))
-  gulp.watch('src/img/**', gulp.series('build', 'reload'))
+  gulp.watch('src/img/**.*', gulp.series('build', 'reload'))
 })
 
 gulp.task('copy', function () {
