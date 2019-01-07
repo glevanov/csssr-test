@@ -6,11 +6,7 @@ html(lang="ru")
     title Анкета - Григорий
     link(rel="stylesheet" type="text/css" href="style.css")
   body.page
-    main.content
-      picture
-        source(srcset="img/logo.webp" type="image/webp")
-        img.logo(src="img/logo.png" alt="Логотип CSSSR")
-      picture
-        source(srcset="img/stamp.webp" type="image/webp")
-        img.stamp(src="img/stamp.png" alt="Штамп Секретно, заполненно собственноручно")
-      h1.visually-hidden Дело
+    h1.visually-hidden Дело
+    div.content
+      include pug/header
+      include pug/footer
