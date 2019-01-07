@@ -1,29 +1,31 @@
 .text-field {
+  align-items: flex-start;
   color: $color-text-label;
+  display: flex;
   font-size: 22.43px;
   font-weight: 700;
   line-height: 49.83px;
   margin: 0;
-  display: flex;
-  align-items: flex-start;
 }
 
 .text-field__input {
+  background-color: transparent;
+  background-image: url("img/separator.png");
+  background-position: bottom left;
+  background-repeat: repeat-x;
   border: none;
   display: block;
   font-family: $font-input;
   font-size: 30px;
   line-height: 36px;
   margin: 0;
-  padding-left: 12px;
-  background-image: url("img/separator.png");
-  background-repeat: repeat-x;
-  background-position: bottom left;
-  background-color: transparent;
   margin-left: 18px;
+  padding-left: 12px;
+  flex-grow: 1;
 
   &--footer {
     width: 206px;
+    flex-grow: 0;
   }
 }
 
