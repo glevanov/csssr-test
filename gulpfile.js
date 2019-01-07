@@ -8,6 +8,7 @@ var server = require('browser-sync').create()
 var imagemin = require('gulp-imagemin')
 var webp = require('gulp-webp')
 var del = require('del')
+var pug = require('gulp-pug')
 
 gulp.task('css', function () {
   return gulp.src('src/sass/style.scss')
@@ -22,7 +23,8 @@ gulp.task('css', function () {
 })
 
 gulp.task('html', function () {
-  return gulp.src('src/*.html')
+  return gulp.src('src/*.pug')
+    .pipe(pug())
     .pipe(gulp.dest('dist'))
 })
 
@@ -41,7 +43,7 @@ gulp.task('server', function () {
   })
 
   gulp.watch('src/sass/**/*.scss', gulp.series('css', 'reload'))
-  gulp.watch('src/*.html', gulp.series('html', 'reload'))
+  gulp.watch('src/*.pug', gulp.series('html', 'reload'))
 })
 
 gulp.task('copy', function () {
