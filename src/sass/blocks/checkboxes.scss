@@ -1,12 +1,27 @@
 .checkboxes {
   color: $color-text-default;
+  display: grid;
   font-size: 21px;
   font-weight: 700;
+  grid-auto-flow: column;
+  grid-row-gap: 10px;
+  grid-template-columns: 258px 271px 230px;
+  grid-template-rows: repeat(7, 1fr);
   line-height: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.checkboxes__item {
+  &--last {
+    grid-row: span 2;
+  }
 }
 
 .checkboxes__label {
   cursor: pointer;
+  display: block;
   margin-left: 27px;
   position: relative;
 
@@ -15,7 +30,7 @@
     background-position: bottom left;
     background-repeat: no-repeat;
     content: "";
-    display: inline-block;
+    display: block;
     height: 28px;
     left: -27px;
     position: absolute;
