@@ -1,2 +1,2 @@
-# gulp-boilerplate
-Заготовка под вёрстку на gulp.
+# csssr-test
+Тестовое задание для CSSSR.

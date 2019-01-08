@@ -15,17 +15,17 @@
   background-repeat: repeat-x;
   border: none;
   display: block;
+  flex-grow: 1;
   font-family: $font-input;
   font-size: 30px;
   line-height: 36px;
   margin: 0;
   margin-left: 18px;
   padding-left: 12px;
-  flex-grow: 1;
 
   &--footer {
-    width: 206px;
     flex-grow: 0;
+    width: 206px;
   }
 }
 
