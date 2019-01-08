@@ -7,6 +7,7 @@
   "license": "MIT",
   "scripts": {
     "lint:style": "stylelint \"src/sass/**/*.scss\" --syntax scss",
+    "lint:sort": "stylelint \"src/sass/**/*.scss\" --syntax scss --fix --config ./.stylelintrc-sort",
     "build": "gulp build",
     "start": "gulp start",
     "images": "gulp images",
@@ -14,7 +15,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "stylelint \"src/sass/**/*.scss\" --syntax scss --fix --config ./.stylelintrc-sort"
+      "pre-commit": "npm run lint:sort"
     }
   },
   "devDependencies": {

@@ -1,0 +1,29 @@
+.checkboxes {
+  color: $color-text-default;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 25px;
+}
+
+.checkboxes__label {
+  cursor: pointer;
+  margin-left: 27px;
+  position: relative;
+
+  &::before {
+    background-image: url("img/checkbox-off.png");
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    content: "";
+    display: inline-block;
+    height: 28px;
+    left: -27px;
+    position: absolute;
+    top: -5px;
+    width: 24px;
+  }
+}
+
+.checkboxes__input:checked + .checkboxes__label::before {
+  background-image: url("img/checkbox-on.png");
+}
