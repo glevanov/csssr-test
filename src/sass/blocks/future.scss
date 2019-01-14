@@ -1,0 +1,40 @@
+.future {
+  display: flex;
+  font-size: 20px;
+  line-height: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.future__item {
+  margin-right: 20px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.future__label {
+  cursor: pointer;
+  display: block;
+  margin-left: 30px;
+  position: relative;
+
+  &::before {
+    background-image: url("img/radio-off.png");
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    content: "";
+    display: block;
+    height: 26px;
+    left: -30px;
+    position: absolute;
+    top: 0;
+    width: 26px;
+  }
+}
+
+.future__input:checked + .future__label::before {
+  background-image: url("img/radio-on.png");
+}

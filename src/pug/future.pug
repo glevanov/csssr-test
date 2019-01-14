@@ -1,3 +1,16 @@
 section
   h2.text__heading Какие у вас планы на будущее?
   p.text__note Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.
+  ul.future
+    li.future__item
+      input.future__input.visually-hidden(type='radio' name='future' id='html-css' checked)
+      label.future__label(for='html-css') Верстать
+    li.future__item
+      input.future__input.visually-hidden(type='radio' name='future' id='js')
+      label.future__label(for='js') Прокачиваться в JS
+    li.future__item
+      input.future__input.visually-hidden(type='radio' name='future' id='management')
+      label.future__label(for='management') Менеджерство
+    li.future__item
+      input.future__input.visually-hidden(type='radio' name='future' id='other')
+      label.future__label(for='other') Другое
