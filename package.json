@@ -18,8 +18,12 @@
       "pre-commit": "npm run sort-styles"
     }
   },
+  "browserslist": [
+    "last 2 version",
+    "> 1%"
+  ],
   "devDependencies": {
-    "autoprefixer": "^9.4.4",
+    "autoprefixer": "^9.4.5",
     "browser-sync": "^2.26.3",
     "del": "^3.0.0",
     "gulp": "^4.0.0",
