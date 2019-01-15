@@ -1,12 +1,11 @@
 .checkboxes {
   color: $color-text-default;
-  display: grid;
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 10px;
+  height: 250px;
   font-size: 21px;
   font-weight: 700;
-  grid-auto-flow: column;
-  grid-row-gap: 10px;
-  grid-template-columns: 258px 271px 230px;
-  grid-template-rows: repeat(7, 1fr);
   line-height: 25px;
   list-style: none;
   margin: 0;
@@ -14,9 +13,7 @@
 }
 
 .checkboxes__item {
-  &--last {
-    grid-row: span 2;
-  }
+  max-width: 230px;
 }
 
 .checkboxes__label {
