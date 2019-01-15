@@ -1,10 +1,14 @@
-export default () => {
-  const aboutElement = document.querySelector('.about')
+const about = document.querySelector('.about')
 
-  const inputHandler = () => {
-    aboutElement.style.height = ''
-    aboutElement.style.height = aboutElement.scrollHeight + 'px'
-  }
+const inputHandler = () => {
+  about.style.height = ''
+  about.style.height = about.scrollHeight + 'px'
+}
 
-  aboutElement.addEventListener('input', inputHandler)
+const init = () => {
+  about.addEventListener('input', inputHandler)
+}
+
+export default {
+  init
 }

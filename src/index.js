@@ -1,3 +1,5 @@
-import initAbout from './js/about.js'
+import about from './js/about'
+import slider from './js/slider'
 
-initAbout();
+about.init()
+slider.init()
