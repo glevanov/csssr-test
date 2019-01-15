@@ -1,11 +1,16 @@
 .text-field {
-  align-items: flex-start;
+  align-items: start;
   color: $color-text-accent;
   display: flex;
   font-size: 22.43px;
   font-weight: 700;
   line-height: 49.83px;
   margin: 0;
+  margin-bottom: 13px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .text-field__input {
@@ -20,12 +25,12 @@
   font-size: 30px;
   line-height: 36px;
   margin: 0;
-  margin-left: 18px;
-  padding-left: 12px;
+  margin-left: 16px;
+  padding-left: 14px;
 
   &--footer {
     flex-grow: 0;
-    width: 206px;
+    width: 195px;
   }
 }
 

@@ -4,11 +4,13 @@
 }
 
 .header__stamp {
-  transform: translateX(65px);
+  margin-top: -15px;
+  transform: translateX(60px);
 }
 
 .header__file {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  transform: translateX(-20px);
 }
