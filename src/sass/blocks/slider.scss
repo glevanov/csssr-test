@@ -1,25 +1,40 @@
+.slider {
+  width: 769px;
+}
+
 .slider__scale {
   background-image: url("img/scale.png");
-  width: 769px;
   height: 26px;
+  width: 769px;
 }
 
 .slider__pin {
   background-image: url("img/pin.png");
-  width: 17px;
   height: 14px;
+  margin-left: calc(-17px / 2 + 1px);
+  transform: translateY(-12px);
+  width: 17px;
 }
 
 .slider__text-wrap {
   display: flex;
-  justify-content: space-between;
 }
 
 .slider__text {
   font-size: 13px;
-  line-height: 19px;
   font-weight: 700;
+  line-height: 19px;
   margin: 0;
+  max-width: 175px;
   padding: 0;
-  width: 175px;
+
+  &:nth-of-type(1) {
+    margin-right: 86px;
+  }
+  &:nth-of-type(2) {
+    margin-right: 59px;
+  }
+  &:last-of-type {
+    margin-left: auto;
+  }
 }
