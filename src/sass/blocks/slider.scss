@@ -1,0 +1,25 @@
+.slider__scale {
+  background-image: url("img/scale.png");
+  width: 769px;
+  height: 26px;
+}
+
+.slider__pin {
+  background-image: url("img/pin.png");
+  width: 17px;
+  height: 14px;
+}
+
+.slider__text-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider__text {
+  font-size: 13px;
+  line-height: 19px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  width: 175px;
+}
