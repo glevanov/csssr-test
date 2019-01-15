@@ -6,14 +6,16 @@
 .slider__scale {
   background-image: url("img/scale.png");
   height: 26px;
+  position: relative;
   width: 769px;
 }
 
 .slider__pin {
   background-image: url("img/pin.png");
   height: 14px;
-  margin-left: calc(-17px / 2 + 2px);
-  transform: translateY(-16px);
+  left: calc(-17px / 2 + 2px);
+  position: absolute;
+  top: -16px;
   width: 17px;
 }
 

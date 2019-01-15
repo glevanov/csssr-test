@@ -25,7 +25,6 @@ const pinEndCoordinate = scaleWidth - pinMidpoint
 const onSliderClick = evt => {
   evt.preventDefault()
   let sliderXPosition = evt.clientX
-
   let sliderRelativePosition
 
   const validateSliderBoundaries = sliderPosition => {
@@ -82,7 +81,7 @@ const onSliderClick = evt => {
 }
 
 const init = () => {
-  sliderPin.addEventListener('click', evt => {
+  sliderPin.addEventListener('mousedown', evt => {
     evt.preventDefault()
     onSliderClick(evt)
   })
