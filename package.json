@@ -1,8 +1,8 @@
 {
-  "name": "gulp-boilerplate",
-  "version": "0.1.0",
-  "description": "Заготовка под вёрстку на gulp",
-  "repository": "https://github.com/glevanov/gulp-boilerplate.git",
+  "name": "csssr-test",
+  "version": "1.0.0",
+  "description": "Тестовое задание для CSSSR",
+  "repository": "https://github.com/glevanov/csssr-test.git",
   "author": "Grigoriy Levanov <glevanov@gmail.com>",
   "license": "MIT",
   "scripts": {
