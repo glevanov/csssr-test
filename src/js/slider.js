@@ -24,23 +24,23 @@ const pinBreakpoints = [
   573 - pinMidpoint
 ]
 
-const onSliderClick = evt => {
+const onPinClick = evt => {
   evt.preventDefault()
   let pinXPosition = evt.clientX
   let pinRelativePosition
 
-  const validateSliderBoundaries = sliderPosition => {
-    if (sliderPosition < pinStartCoordinate) {
+  const validateScaleBoundaries = pinPosition => {
+    if (pinPosition < pinStartCoordinate) {
       return pinStartCoordinate
-    } else if (sliderPosition > pinEndCoordinate) {
+    } else if (pinPosition > pinEndCoordinate) {
       return pinEndCoordinate
     }
-    return sliderPosition
+    return pinPosition
   }
   const calculatePinPosition = moveEvt => {
     const currentX = moveEvt.clientX
     const horizontalShift = pinXPosition - currentX
-    pinRelativePosition = validateSliderBoundaries(
+    pinRelativePosition = validateScaleBoundaries(
       pin.offsetLeft - horizontalShift
     )
     pinXPosition = currentX
@@ -48,7 +48,7 @@ const onSliderClick = evt => {
   const updatePin = (position) => {
     pin.style.left = `${position}px`
   }
-  const snapSliderPosition = () => {
+  const snapPin = () => {
     let snapPoint
     if (pinRelativePosition < pinBreakpoints[0]) {
       snapPoint = pinSnapPoints[0]
@@ -74,7 +74,7 @@ const onSliderClick = evt => {
   }
   const onMouseUp = upEvt => {
     upEvt.preventDefault()
-    snapSliderPosition()
+    snapPin()
     document.removeEventListener('mousemove', onMouseMove)
     document.removeEventListener('mouseup', onMouseUp)
   }
@@ -85,7 +85,7 @@ const onSliderClick = evt => {
 const init = () => {
   pin.addEventListener('mousedown', evt => {
     evt.preventDefault()
-    onSliderClick(evt)
+    onPinClick(evt)
   })
 }
 
