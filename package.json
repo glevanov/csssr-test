@@ -21,8 +21,11 @@
     }
   },
   "browserslist": [
-    "last 2 version",
-    "> 1%"
+    "last 2 IE versions",
+    "last 2 Safari versions",
+    "last 2 Chrome versions",
+    "last 2 iOS versions",
+    "last 2 ChromeAndroid versions"
   ],
   "devDependencies": {
     "@babel/preset-env": "^7.2.3",

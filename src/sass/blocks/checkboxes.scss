@@ -10,12 +10,16 @@
   margin: 0;
   margin-top: 25px;
   padding: 0;
-  row-gap: 10px;
   width: 795px;
 }
 
 .checkboxes__item {
   max-width: 230px;
+  margin-bottom: 10px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .checkboxes__label {
