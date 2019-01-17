@@ -1,4 +1,4 @@
-import about from './js/about'
+import about from './js/textarea'
 import slider from './js/slider'
 
 about.init()
