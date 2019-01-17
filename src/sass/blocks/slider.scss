@@ -13,10 +13,14 @@
 .slider__pin {
   background-image: url("img/pin.png");
   height: 14px;
-  left: calc(-17px / 2 + 2px);
+  left: calc(375px - 17px / 2);
   position: absolute;
   top: -16px;
   width: 17px;
+
+  &--transition {
+    transition: left 1s;
+  }
 }
 
 .slider__text-wrap {

@@ -1,6 +1,7 @@
 const slider = document.querySelector('.slider')
 const scale = slider.querySelector('.slider__scale')
 const pin = slider.querySelector('.slider__pin')
+const animationClass = 'slider__pin--transition'
 
 const scaleLeftCoordinate = scale.getBoundingClientRect().left
 const scaleRightCoordinate = scale.getBoundingClientRect().right
@@ -26,6 +27,7 @@ const pinBreakpoints = [
 
 const onPinClick = evt => {
   evt.preventDefault()
+  pin.classList.remove(animationClass)
   let pinXPosition = evt.clientX
   let pinRelativePosition
 
@@ -74,6 +76,7 @@ const onPinClick = evt => {
   }
   const onMouseUp = upEvt => {
     upEvt.preventDefault()
+    pin.classList.add(animationClass)
     snapPin()
     document.removeEventListener('mousemove', onMouseMove)
     document.removeEventListener('mouseup', onMouseUp)
